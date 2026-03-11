@@ -1,0 +1,280 @@
+﻿=========================================
+  Welcome to Gradify (Java Console App)  
+=========================================
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Registration successful for UserA
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Username already exists!
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Registration successful for UserB
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Invalid username or password.
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Login successful. Welcome, UserA!
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter document title: Document 'Doc1' uploaded successfully! ID: 1
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter document title: Document 'Doc2' uploaded successfully! ID: 2
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter exact document title to search: Document Found: ID: 1 | Title: Doc1 | Owner: UserA | Upvotes: 0
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter exact document title to search: No document found with title: Doc3
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter your message to Global Chat: Global message sent!
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Chat ---
+[GLOBAL] UserA: Hello from UserA
+-------------------
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter recipient username: Enter message: Direct message sent to UserB!
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter recipient username: User does not exist.
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Invalid option. Please try again.
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Direct Messages ---
+[DIRECT -> UserB] UserA: Hello UserB
+-----------------------
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter document ID to upvote: Document ID 1 upvoted successfully!
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Available Documents ---
+ID: 1 | Title: Doc1 | Owner: UserA | Upvotes: 1
+ID: 2 | Title: Doc2 | Owner: UserA | Upvotes: 0
+---------------------------
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Leaderboard ---
+1. UserA - Score: 10
+2. UserB - Score: 0
+--------------------------
+
+--- Dashboard (UserA) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Logged out successfully.
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Login successful. Welcome, UserB!
+
+--- Dashboard (UserB) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Chat ---
+[GLOBAL] UserA: Hello from UserA
+-------------------
+
+--- Dashboard (UserB) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Direct Messages ---
+[DIRECT -> UserB] UserA: Hello UserB
+-----------------------
+
+--- Dashboard (UserB) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Logged out successfully.
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Goodbye!
