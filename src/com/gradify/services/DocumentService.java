@@ -2,15 +2,14 @@ package com.gradify.services;
 
 import com.gradify.models.Document;
 import com.gradify.models.User;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import com.gradify.datastructures.DoublyLinkedList;
+import com.gradify.algorithms.Searcher;
 
 public class DocumentService {
-    private List<Document> documents;
+    private DoublyLinkedList<Document> documents;
 
     public DocumentService() {
-        this.documents = new ArrayList<>();
+        this.documents = new DoublyLinkedList<>();
     }
 
     public void uploadDocument(String title, User uploader) {
@@ -31,19 +30,25 @@ public class DocumentService {
         System.out.println("---------------------------");
     }
 
-    public boolean upvoteDocument(int docId) {
-        Optional<Document> documentOpt = documents.stream()
-                .filter(doc -> doc.getId() == docId)
-                .findFirst();
-
-        if (documentOpt.isPresent()) {
-            Document doc = documentOpt.get();
-            doc.upvote();
-            System.out.println("Document ID " + docId + " upvoted successfully!");
-            return true;
+    public void searchDocument(String title) {
+        Document foundDoc = Searcher.linearSearchByTitle(documents, title);
+        if (foundDoc != null) {
+            System.out.println("Document Found: " + foundDoc);
         } else {
-            System.out.println("Document with ID " + docId + " not found.");
-            return false;
+            System.out.println("No document found with title: " + title);
         }
     }
+
+    public boolean upvoteDocument(int docId) {
+        for (Document doc : documents) {
+            if (doc.getId() == docId) {
+                doc.upvote();
+                System.out.println("Document ID " + docId + " upvoted successfully!");
+                return true;
+            }
+        }
+        System.out.println("Document with ID " + docId + " not found.");
+        return false;
+    }
 }
+

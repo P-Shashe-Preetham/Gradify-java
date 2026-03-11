@@ -1,10 +1,11 @@
 package com.gradify.services;
 
 import com.gradify.models.User;
+import com.gradify.algorithms.Sorter;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class LeaderboardService {
 
@@ -14,16 +15,18 @@ public class LeaderboardService {
             return;
         }
 
-        List<User> sortedUsers = users.stream()
-                .sorted((u1, u2) -> Integer.compare(u2.getScore(), u1.getScore())) // Descending order
-                .collect(Collectors.toList());
+        // Convert the Collection to an ArrayList so QuickSort can handle elements by index
+        List<User> listToSort = new ArrayList<>(users);
+
+        Sorter.quickSortByScoreDescending(listToSort);
 
         System.out.println("--- Global Leaderboard ---");
         int rank = 1;
-        for (User user : sortedUsers) {
+        for (User user : listToSort) {
             System.out.println(rank + ". " + user.getUsername() + " - Score: " + user.getScore());
             rank++;
         }
         System.out.println("--------------------------");
     }
 }
+

@@ -1,16 +1,15 @@
 package com.gradify.services;
 
 import com.gradify.models.User;
-import java.util.HashMap;
-import java.util.Map;
+import com.gradify.datastructures.HashTable;
 import java.util.Collection;
 
 public class AuthService {
-    private Map<String, User> users;
+    private HashTable<String, User> users;
     private User loggedInUser;
 
     public AuthService() {
-        this.users = new HashMap<>();
+        this.users = new HashTable<>();
         this.loggedInUser = null;
     }
 
@@ -61,3 +60,4 @@ public class AuthService {
         return users.values();
     }
 }
+

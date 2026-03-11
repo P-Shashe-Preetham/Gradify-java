@@ -2,22 +2,21 @@ package com.gradify.services;
 
 import com.gradify.models.Message;
 import com.gradify.models.User;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+import com.gradify.datastructures.CircularQueue;
+import com.gradify.datastructures.DoublyLinkedList;
 
 public class ChatService {
-    private List<Message> globalMessages;
-    private List<Message> directMessages;
+    private CircularQueue<Message> globalMessages;
+    private DoublyLinkedList<Message> directMessages;
 
     public ChatService() {
-        this.globalMessages = new ArrayList<>();
-        this.directMessages = new ArrayList<>();
+        this.globalMessages = new CircularQueue<>(100); // Store last 100 global messages
+        this.directMessages = new DoublyLinkedList<>();
     }
 
     public void sendGlobalMessage(User sender, String content) {
         Message msg = new Message(sender, "GLOBAL", content);
-        globalMessages.add(msg);
+        globalMessages.enqueue(msg);
         System.out.println("Global message sent!");
     }
 
@@ -44,19 +43,19 @@ public class ChatService {
     }
 
     public void viewDirectMessages(User currentUser) {
-        List<Message> userMessages = directMessages.stream()
-                .filter(msg -> msg.getReceiverUsername().equals(currentUser.getUsername()) || 
-                               msg.getSender().getUsername().equals(currentUser.getUsername()))
-                .collect(Collectors.toList());
-
-        if (userMessages.isEmpty()) {
-            System.out.println("No direct messages available for you.");
-            return;
-        }
+        boolean hasMessages = false;
         System.out.println("--- Direct Messages ---");
-        for (Message msg : userMessages) {
-            System.out.println(msg);
+        for (Message msg : directMessages) {
+            if (msg.getReceiverUsername().equals(currentUser.getUsername()) || 
+                msg.getSender().getUsername().equals(currentUser.getUsername())) {
+                System.out.println(msg);
+                hasMessages = true;
+            }
+        }
+        if (!hasMessages) {
+            System.out.println("No direct messages available for you.");
         }
         System.out.println("-----------------------");
     }
 }
+

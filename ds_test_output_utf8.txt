@@ -1,0 +1,271 @@
+﻿=========================================
+  Welcome to Gradify (Java Console App)  
+=========================================
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Registration successful for Alice
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Registration successful for Bob
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Login successful. Welcome, Alice!
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter document title: Document 'My First Document' uploaded successfully! ID: 1
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter document title: Document 'Another interesting PDF' uploaded successfully! ID: 2
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter exact document title to search: No document found with title: xyz
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter exact document title to search: Document Found: ID: 1 | Title: My First Document | Owner: Alice | Upvotes: 0
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter your message to Global Chat: Global message sent!
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter recipient username: Enter message: Direct message sent to Bob!
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Chat ---
+[GLOBAL] Alice: Hello world from Alice!
+-------------------
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Direct Messages ---
+[DIRECT -> Bob] Alice: Hi Bob!
+-----------------------
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Leaderboard ---
+1. Alice - Score: 0
+2. Bob - Score: 0
+--------------------------
+
+--- Dashboard (Alice) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Logged out successfully.
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Enter username: Enter password: Login successful. Welcome, Bob!
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Chat ---
+[GLOBAL] Alice: Hello world from Alice!
+-------------------
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Direct Messages ---
+[DIRECT -> Bob] Alice: Hi Bob!
+-----------------------
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter recipient username: Enter message: Direct message sent to Alice!
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Available Documents ---
+ID: 1 | Title: My First Document | Owner: Alice | Upvotes: 0
+ID: 2 | Title: Another interesting PDF | Owner: Alice | Upvotes: 0
+---------------------------
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Enter document ID to upvote: Document ID 1 upvoted successfully!
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: --- Global Leaderboard ---
+1. Alice - Score: 10
+2. Bob - Score: 0
+--------------------------
+
+--- Dashboard (Bob) ---
+1. Upload new Document
+2. View All Documents
+3. Search Document by Title
+4. Upvote a Document
+5. Send Global Message
+6. View Global Chat
+7. Send Direct Message
+8. View Direct Messages
+9. View Leaderboard
+10. Logout
+Choose an option: Logged out successfully.
+
+--- Main Menu (Not Logged In) ---
+1. Register
+2. Login
+3. Exit
+Choose an option: Goodbye!

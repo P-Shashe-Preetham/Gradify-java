@@ -59,13 +59,14 @@ public class Main {
                 System.out.println("\n--- Dashboard (" + currentUser.getUsername() + ") ---");
                 System.out.println("1. Upload new Document");
                 System.out.println("2. View All Documents");
-                System.out.println("3. Upvote a Document");
-                System.out.println("4. Send Global Message");
-                System.out.println("5. View Global Chat");
-                System.out.println("6. Send Direct Message");
-                System.out.println("7. View Direct Messages");
-                System.out.println("8. View Leaderboard");
-                System.out.println("9. Logout");
+                System.out.println("3. Search Document by Title");
+                System.out.println("4. Upvote a Document");
+                System.out.println("5. Send Global Message");
+                System.out.println("6. View Global Chat");
+                System.out.println("7. Send Direct Message");
+                System.out.println("8. View Direct Messages");
+                System.out.println("9. View Leaderboard");
+                System.out.println("10. Logout");
                 System.out.print("Choose an option: ");
 
                 String choice = scanner.nextLine().trim();
@@ -80,6 +81,11 @@ public class Main {
                         documentService.listDocuments();
                         break;
                     case "3":
+                        System.out.print("Enter exact document title to search: ");
+                        String searchTitle = scanner.nextLine().trim();
+                        documentService.searchDocument(searchTitle);
+                        break;
+                    case "4":
                         System.out.print("Enter document ID to upvote: ");
                         try {
                             int docId = Integer.parseInt(scanner.nextLine().trim());
@@ -88,15 +94,15 @@ public class Main {
                             System.out.println("Invalid numeric ID.");
                         }
                         break;
-                    case "4":
+                    case "5":
                         System.out.print("Enter your message to Global Chat: ");
                         String globalMsg = scanner.nextLine().trim();
                         chatService.sendGlobalMessage(currentUser, globalMsg);
                         break;
-                    case "5":
+                    case "6":
                         chatService.viewGlobalChat();
                         break;
-                    case "6":
+                    case "7":
                         System.out.print("Enter recipient username: ");
                         String receiver = scanner.nextLine().trim();
                         if (authService.getUser(receiver) == null) {
@@ -107,13 +113,13 @@ public class Main {
                             chatService.sendDirectMessage(currentUser, receiver, dmMessage);
                         }
                         break;
-                    case "7":
+                    case "8":
                         chatService.viewDirectMessages(currentUser);
                         break;
-                    case "8":
+                    case "9":
                         leaderboardService.displayLeaderboard(authService.getAllUsers());
                         break;
-                    case "9":
+                    case "10":
                         authService.logout();
                         break;
                     default:
